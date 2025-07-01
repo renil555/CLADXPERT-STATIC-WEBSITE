@@ -315,11 +315,16 @@ h6 {
   padding: 2rem;
 }
 
+.nav-mobile-logo {
+  display: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
 .nav-mobile-logo img {
-  width: 150px;
-  height: 80px;
-  margin-bottom: 25px;
-  opacity: 0;
+  width: 120px;
+  height: auto;
+  opacity: 1;
+  margin-bottom: 0;
 }
 
 .close-btn {
@@ -408,13 +413,17 @@ h6 {
 }
 
 @media (max-width: 768px) {
- .nav-mobile-logo img {
+  .nav-mobile-logo {
+    display: block;
     opacity: 1;
+    visibility: visible;
   }
 
   .navbar-scrolled .nav-mobile-logo {
-    display: block;
     opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
   }
 }
 
