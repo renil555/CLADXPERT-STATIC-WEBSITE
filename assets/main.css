@@ -411,6 +411,11 @@ h6 {
  .nav-mobile-logo img {
     opacity: 1;
   }
+
+  .navbar-scrolled .nav-mobile-logo {
+    display: block;
+    opacity: 0;
+  }
 }
 
 /* ---------------------------------------------------------------
