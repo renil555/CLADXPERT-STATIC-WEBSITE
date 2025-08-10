@@ -140,7 +140,7 @@ window.addEventListener("load", () => {
         setTimeout(() => {
             if (loaderWrapper) loaderWrapper.style.display = 'none';
             document.getElementById('heroContent')?.classList.add('animate');
-        }, 1000);
+        }, 800);
     }, 400);
 });
 
